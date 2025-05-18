@@ -1,0 +1,65 @@
+@use "./reset";
+@use "./variables";
+
+// Layout
+@use "./layout/grid";
+@use "./layout/header";
+@use "./layout/header-account";
+@use "./layout/footer";
+
+// Pages
+@use "./pages/home";
+@use "./pages/sign-up";
+@use "./pages/sign-in";
+@use "./pages/collection";
+@use "./pages/payment";
+@use "./pages/account";
+
+// Components
+@use "./components/buttons";
+
+// Common
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: variables.$manrope-font;
+}
+
+button,
+input,
+textarea,
+select {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+button,
+select {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}

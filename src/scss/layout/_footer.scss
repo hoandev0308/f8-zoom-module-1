@@ -1,0 +1,70 @@
+@use "../variables";
+
+.footer {
+  margin: 14px 0;
+
+  &__list {
+    &-heading {
+      color: variables.$black;
+      font-size: 2rem;
+      text-transform: uppercase;
+      line-height: normal;
+      font-weight: 400;
+      margin: 16px 0 24px;
+    }
+
+    &-hotline,
+    &-email {
+      line-height: 2.2rem;
+    }
+
+    &-item {
+      li {
+        line-height: 2.6rem;
+      }
+
+      a {
+        color: variables.$black;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+
+        &:hover {
+          color: variables.$primary;
+        }
+      }
+
+      &-follow {
+        display: flex;
+        align-items: center;
+        margin: 12px 0;
+
+        a {
+          display: inline-block;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    &-payment {
+      img {
+        background: transparent;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        margin: 2px 6px;
+        cursor: pointer;
+      }
+    }
+
+    &-certification {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: inline-block;
+        margin-right: 14px;
+      }
+    }
+  }
+}

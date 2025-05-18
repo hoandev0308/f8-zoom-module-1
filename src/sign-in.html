@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <%- include("./partials/head.ejs") %>
+</head>
+
+<body>
+    <div class="signin">
+        <div class="inner">
+            <div class="row">
+                <div class="col col-xxl-6 col-xl-6 col-sm-12 d-lg-none d-md-none d-sm-none">
+                    <div class="signin__intro">
+                        <h2 class="signin__intro-heading">One account for all services</h2>
+
+                        <p class="signin__intro-desc">Hi there! Sign up an account and enjoy your shopping experience
+                            on</p>
+
+                        <button class="signin__intro-btn" type="button">Create New Account</button>
+                    </div>
+                </div>
+
+                <div class="col col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <form action="" class="signin__form">
+                        <h2 class="signin__form-heading">Sign IN</h2>
+
+                        <div class="signin__form-search">
+                            <div class="signin__form-search-icon">
+                                <img src="./assets/images/img-mail.png" alt="mail">
+                            </div>
+                            <input type="text" placeholder="Email Address" class="search-input">
+                        </div>
+
+                        <div class="signin__form-search">
+                            <div class="signin__form-search-icon">
+                                <img src="./assets/images/img-password.png" alt="password">
+                            </div>
+
+                            <input type="password" placeholder="Password" class="search-input">
+
+                            <div class="signin__form-search-arrow">
+                                <img src="./assets/images/home/img-arrow-back.png" alt="arrow back">
+                            </div>
+                        </div>
+
+                        <a href="/forgot-password" class="signin__form-forgot">Forgot password?</a>
+
+                        <p class="signin__form-desc">Sign in with existing login from a social network account</p>
+
+                        <div class="signin__form-socials">
+                            <a href="#">
+                                <img src="./assets/images/img-google.png" alt="google">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/img-github.png" alt="github">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/img-apple.png" alt="apple">
+                            </a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

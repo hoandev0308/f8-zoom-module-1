@@ -1,0 +1,244 @@
+@use "../variables";
+
+.account {
+  position: relative;
+}
+
+.account__banner {
+  width: 100%;
+  height: 22.8rem;
+  background: linear-gradient(to right, #ffdcd2, #ffe7e0);
+  position: absolute;
+  z-index: -1;
+}
+
+.account__content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.account__container {
+  display: flex;
+  gap: 2.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+// ==== Info Panel ====
+.account__info,
+.account__overview {
+  border: 0.1rem solid #e5e5e5;
+  border-radius: 2rem;
+  background-color: variables.$white;
+}
+
+.account__info {
+  padding: 0 4.6rem;
+
+  &--avatar {
+    margin: 5.8rem auto 0;
+    width: 17.2rem;
+    height: 17.2rem;
+    aspect-ratio: 1 / 1;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 70% top;
+    }
+
+    .account__info--changeavt {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 5;
+      width: 2.4rem;
+      height: 2.4rem;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      background-color: variables.$primary;
+      outline: 0.3rem solid variables.$white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+    }
+  }
+
+  &--context {
+    text-align: center;
+    border-bottom: 0.1rem solid #e5e5e5;
+  }
+
+  &--name {
+    margin-top: 2.4rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &--view {
+    display: inline-block;
+    margin: 14px 0 2.8rem;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 2rem;
+    background-color: #ffdbce;
+    color: variables.$text;
+  }
+
+  &__funcitonal--list {
+    padding: 4rem 0 8.6rem;
+  }
+
+  .active {
+    color: variables.$primary;
+  }
+
+  &__functional--item {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 1.6rem 2rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    box-shadow: -0.5rem 0.4rem 1.73rem rgba(248, 248, 248, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    .item__icon--cover {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+}
+
+// ==== Overview Panel ====
+.account__overview {
+  padding: 6rem 4rem 4rem;
+
+  &--content {
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  &--info {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+}
+
+.overview__info--container {
+  width: calc((100% - 4rem) / 2);
+  padding: 1.8rem 2.6rem;
+  border: 0.1rem solid #e5e5e5;
+  border-radius: 2rem;
+
+  .account__balance--header {
+    margin-bottom: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
+
+.account__balance--info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4.2rem;
+  border-top: 0.1rem solid #e5e5e5;
+
+  & > .account__balance--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 1.2rem;
+    border-radius: 10rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: variables.$primary;
+    color: variables.$white;
+  }
+
+  & > .account__balance--money {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    color: variables.$primary;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+}
+
+// ==== Purchase History ====
+.account__historybuy--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    span {
+      font-size: 2rem;
+      color: variables.$primary;
+    }
+  }
+}
+
+.account__history--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.5rem;
+}
+
+.account__historybuy--btn {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    color: variables.$primary;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .overview__info--container {
+    width: 100%;
+  }
+}

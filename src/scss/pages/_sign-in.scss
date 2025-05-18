@@ -1,0 +1,169 @@
+@use "../variables";
+
+.signin {
+  width: 100vw;
+  height: 100vh;
+  background: url("./assets/images/bg-authen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .inner {
+    width: 70%;
+    border-radius: 45px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 6px 12px 34.6px 0px rgba(238, 232, 231, 0.3);
+    backdrop-filter: blur(12px);
+    position: relative;
+  }
+
+  &__intro {
+    padding: 105px 68px;
+
+    &-heading {
+      color: #404040;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 3.2rem;
+      font-family: variables.$manrope-font;
+      word-wrap: break-word;
+      max-width: 80%;
+    }
+
+    &-desc {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #323232;
+      max-width: 66%;
+      word-wrap: break-word;
+      line-height: 2.4rem;
+      margin: 56px 0;
+    }
+
+    &-btn {
+      color: variables.$white;
+      background-color: variables.$primary;
+      border-radius: 100px;
+      padding: 12px 12px;
+      min-width: 50%;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 500;
+      margin-bottom: 85px;
+    }
+  }
+
+  &__form {
+    padding: 105px 68px;
+    border-radius: 45px;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+
+    &-heading {
+      color: #404040;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 3.2rem;
+      font-family: variables.$manrope-font;
+      word-wrap: break-word;
+      max-width: 80%;
+      padding-bottom: 24px;
+    }
+
+    &-search {
+      display: flex;
+      align-items: center;
+      border-radius: 100px;
+      background-color: #f2f2f2;
+      height: 48px;
+      overflow: hidden;
+      margin-bottom: 18px;
+
+      &-icon {
+        min-width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 16px;
+        height: 16px;
+        background: transparent;
+      }
+
+      input {
+        flex: 1;
+        outline: none;
+        border: none;
+        padding-right: 20px;
+        background-color: #f2f2f2;
+        height: 100%;
+      }
+
+      &-arrow {
+        width: 36px;
+        height: 36px;
+        background-color: variables.$primary;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 8px;
+      }
+    }
+
+    &-forgot {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: variables.$primary;
+      margin: 24px 0 48px;
+    }
+
+    &-desc {
+      color: #999999;
+      font-weight: 400;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    &-socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        display: inline-block;
+        margin: 24px 8px 0;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .signin .inner {
+    width: 96%;
+  }
+
+  .signin__form {
+    padding: 105px 24px;
+  }
+
+   .signin__form-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <%- include("./partials/head.ejs") %>
+</head>
+
+<body>
+    <div class="signup">
+        <div class="inner">
+            <div class="row">
+                <div class="col col-xxl-6 col-xl-6 col-sm-12 d-lg-none d-md-none d-sm-none">
+                    <div class="signup__intro">
+                        <h2 class="signup__intro-heading">Easy steps to join membership.</h2>
+
+                        <ul class="signup__intro-list">
+                            <li class="signup__intro-item">
+                                <span>1</span>
+                                <p>Sign up using your email.</p>
+                            </li>
+
+                            <li class="signup__intro-item">
+                                <span>2</span>
+                                <p>Please click the verification link in your registered email.</p>
+                            </li>
+
+                            <li class="signup__intro-item">
+                                <span>3</span>
+                                <p>Complete the sign up form.</p>
+                            </li>
+
+                            <li class="signup__intro-item">
+                                <span>4</span>
+                                <p>You are all set, start enjoy shopping in.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <form action="" class="signup__form">
+                        <h2 class="signup__form-heading">Sign Up</h2>
+
+                        <div class="signup__form-search">
+                            <div class="signup__form-search-icon">
+                                <img src="./assets/images/img-mail.png" alt="mail">
+                            </div>
+                            <input type="text" placeholder="Email Address" class="search-input">
+                        </div>
+
+                        <button class="signup__form-btn" type="button">Send Verification Mail</button>
+
+                        <p class="signup__form-desc">Sign in with existing login from a social network account</p>
+
+                        <div class="signup__form-socials">
+                            <a href="#">
+                                <img src="./assets/images/img-google.png" alt="google">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/img-github.png" alt="github">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/img-apple.png" alt="apple">
+                            </a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

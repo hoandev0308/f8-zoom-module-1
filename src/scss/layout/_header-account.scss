@@ -1,0 +1,165 @@
+@use "../variables";
+
+.header-account {
+  &__wrapper-top {
+    font-family: variables.$manrope-font;
+    background-color: variables.$primary;
+  }
+
+  &__info,
+  &__info-actions,
+  &__info-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 39px;
+    color: variables.$white;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  &__info {
+    &-about {
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    &-actions {
+      > span {
+        position: relative;
+        margin: 0 16px;
+      }
+
+      span::after {
+        content: url("./assets/images/home/img-arrow-down.png");
+        position: absolute;
+        right: -12px;
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    &-account {
+      margin: 0 16px;
+      position: relative;
+      &:hover &-actions {
+        display: block;
+      }
+
+      span {
+        margin: 0 4px;
+      }
+
+      &-actions {
+        min-width: 170px;
+        position: absolute;
+        top: 44px;
+        right: 0;
+        background-color: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 8px;
+        padding: 8px 8px;
+        display: none;
+
+        &::before {
+          display: block;
+          content: "";
+          width: 100%;
+          height: 17px;
+          position: absolute;
+          top: -10px;
+          left: 0;
+          background: transparent;
+        }
+
+        li {
+          display: flex;
+          flex-direction: column;
+          border-radius: 8px;
+        }
+
+        a {
+          color: #333;
+          &:hover {
+            color: variables.$primary;
+          }
+        }
+      }
+    }
+  }
+
+  &__wrapper-bottom {
+    // edit
+    background-color: variables.$primary;
+    height: 95px;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 95px;
+
+    &-logo {
+      cursor: pointer;
+    }
+
+    &-input {
+      background-color: variables.$white;
+      border-radius: 100px;
+      height: 4.2rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+
+      select {
+        padding-left: 18px;
+      }
+
+      input {
+        flex: 1;
+        outline: none;
+        border: none;
+        padding-left: 18px;
+        height: inherit;
+        border-left: 1px solid #fff4f1;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 18px;
+        align-self: stretch;
+      }
+    }
+  }
+
+  &__wrapper-nav {
+    background-color: variables.$white;
+    height: 54px;
+    box-shadow: 0px 4.206px 11.25px 0px rgba(244, 244, 244, 0.5);
+  }
+
+  &__nav-inner,
+  &__nav-left,
+  &__nav-right,
+  &__nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+    font-size: 1.48rem;
+  }
+
+  &__nav-item {
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    line-height: 36px;
+    display: inline-block;
+    padding: 0 4px;
+  }
+}
