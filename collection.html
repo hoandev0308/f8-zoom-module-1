@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Favicon -->
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/f8-zoom-module-1/assets/main-c6Q8jpXl.js"></script>
+  <link rel="stylesheet" crossorigin href="/f8-zoom-module-1/assets/main-CiqkighN.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header Layout -->
+        <header class="header">
+    <!-- <div class="header__inner">
+
+    </div> -->
+    <div class="header__wrapper-top">
+        <div class="container">
+            <div class="header__info">
+                <p class="header__info-about">Về chúng tôi</p>
+
+                <div class="header__info-actions">
+                    <span>Trung tâm hỗ trợ</span>
+                    <span>ENG</span>
+
+                    <div class="header__info-account">
+                        <img src="./assets/images/home/img-avatar.png" alt="avatar">
+                        <span>Tài khoản</span>
+
+                        <ul class="header__info-account-actions">
+                            <li>
+                                <a href="/sign-in">Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a href="/sign-up">Đăng xuất</a>
+                            </li>
+                            <li>
+                                <a href="/collection">Sản phẩm</a>
+                            </li>
+                            <li>
+                                <a href="/payment">Thanh toán online</a>
+                            </li>
+                            <li>
+                                <a href="/account">Thông tin người dùng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__wrapper-bottom">
+        <div class="container">
+            <div class="header__search">
+                <div class="header__search-logo">
+                    <a href="/">
+                        <img src="./assets/images/home/img-logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="header__search-input">
+                    <select name="products" id="categories">
+                        <option value="saab">All categories</option>
+                        <option value="mercedes">Game Cards</option>
+                        <option value="audi">Payment Cards</option>
+                        <option value="audi">Gift Cards</option>
+                        <option value="audi">Game Console</option>
+                        <option value="audi">Game CD-Key</option>
+                    </select>
+
+                    <input type="text" placeholder="Search">
+                    <button>
+                        <img src="./assets/images/home/img-search.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__wrapper-nav">
+        <div class="container">
+            <div class="header__nav-inner">
+                <div class="header__nav-left">
+                    <div class="header__nav-item">
+                        <a href="/">Trang chủ</a>
+                    </div>
+
+                    <div class="header__nav-item">
+                        <a href="/">Thẻ điện thoại</a>
+                        <img src="./assets/images/home/img-arrow-down-grey.png" alt="arrow-down-grey">
+                    </div>
+
+                    <div class="header__nav-item">
+                        <a href="/">Nạp game</a>
+                        <img src="./assets/images/home/img-arrow-down-grey.png" alt="arrow-down">
+                    </div>
+                </div>
+
+                <div class="header__nav-right">
+                    <img src="./assets/images/home/img-call.png" alt="call">
+                    <a href="tel:1920010800">Hotline: 1920010800</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col col-4 col-xl-4 col-lg-4 col-md-4 d-sm-none d-xs-none g-2">
+                        <div class="sidebar">
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__item-title">Danh mục sản phẩm</h2>
+
+                                <ul class="sidebar__item-menu">
+                                    <li><a href="">Mobile Game Cards</a></li>
+                                    <li><a href="">Cards Game</a></li>
+                                    <li><a href="">Payment Cards</a></li>
+                                    <li><a href="">Gift Cards</a></li>
+                                    <li><a href="">Game Console</a></li>
+                                    <li><a href="">Game CD-Key</a></li>
+                                    <li><a href="">Video Streaming</a></li>
+                                    <li><a href="">Music</a></li>
+                                    <li><a href="">Shopping</a></li>
+                                    <li><a href="">Telco Prepaid Cards</a></li>
+                                    <li><a href="">Tools</a></li>
+                                    <li><a href="">Software</a></li>
+                                    <li><a href="">Social App</a></li>
+                                    <li><a href="">Freebie Codes</a></li>
+                                    <li><a href="">Subscript</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__item-title">Khoảng giá</h2>
+
+                                <ul class="sidebar__item-menu">
+                                    <li class="sidebar__item-slider">
+                                        <input type="range" min="0" max="100" value="0" id="range-min">
+                                        <input type="range" min="0" max="100" value="100" id="range-max">
+                                        <div class="sidebar__item-slider-track"></div>
+                                    </li>
+
+                                    <li class="sidebar__item-price">
+                                        <span>Price: </span>
+                                        <span>500.000</span>
+                                        <span>~</span>
+                                        <span>1.000.000</span>
+                                    </li>
+
+                                    <button class="sidebar__item-btn">Lọc</button>
+                                </ul>
+                            </div>
+
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__item-title">Đánh giá</h2>
+
+                                <ul class="sidebar__item-menu">
+                                    <li class="sidebar__item-menu-list">
+                                        <input type="checkbox">
+
+                                        <div class="sidebar__item-menu-star">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                        </div>
+                                        <span>(120k)</span>
+                                    </li>
+
+                                    <li class="sidebar__item-menu-list">
+                                        <input type="checkbox">
+
+                                        <div class="sidebar__item-menu-star">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-secondary.png"
+                                                alt="collection-start">
+                                        </div>
+                                        <span>(120k)</span>
+                                    </li>
+
+                                    <li class="sidebar__item-menu-list">
+                                        <input type="checkbox">
+
+                                        <div class="sidebar__item-menu-star">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-secondary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-secondary.png"
+                                                alt="collection-start">
+                                        </div>
+                                        <span>(120k)</span>
+                                    </li>
+
+                                    <li class="sidebar__item-menu-list">
+                                        <input type="checkbox">
+
+                                        <div class="sidebar__item-menu-star">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-secondary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-secondary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-secondary.png"
+                                                alt="collection-start">
+                                        </div>
+                                        <span>(120k)</span>
+                                    </li>
+
+                                    <li class="sidebar__item-menu-list">
+                                        <input type="checkbox">
+
+                                        <div class="sidebar__item-menu-star">
+                                            <img src="./assets/images/home/img-collection-start-primary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-secondary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-secondary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-secondary.png"
+                                                alt="collection-start">
+                                            <img src="./assets/images/home/img-collection-start-secondary.png"
+                                                alt="collection-start">
+                                        </div>
+                                        <span>(120k)</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__item-title">Thương hiệu</h2>
+
+                                <ul class="sidebar__item-menu">
+                                    <li>
+                                        <input type="checkbox" id="apple">
+                                        <label class="sidebar__item-menu-brand" for="apple">Apple</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="google">
+                                        <label class="sidebar__item-menu-brand" for="google">Google</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="microsoft">
+                                        <label class="sidebar__item-menu-brand" for="microsoft">Microsoft</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="amazon">
+                                        <label class="sidebar__item-menu-brand" for="amazon">Amazon</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="McDonald">
+                                        <label class="sidebar__item-menu-brand" for="McDonald">McDonald's</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="visa">
+                                        <label class="sidebar__item-menu-brand" for="visa">Visa</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="vuitton">
+                                        <label class="sidebar__item-menu-brand" for="vuitton">Louis Vuitton</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="MasterCard">
+                                        <label class="sidebar__item-menu-brand" for="MasterCard">MasterCard</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="coca">
+                                        <label class="sidebar__item-menu-brand" for="coca">Coca-Cola</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sidebar__item">
+                                <div class="sidebar__item-voucher">
+                                    <div class="sidebar__item-img">
+                                        <img src="./assets/images/home/img-voucher.png" alt="voucher">
+                                    </div>
+
+                                    <div class="sidebar__item-desc">
+                                        <h2>Card voucher hot news</h2>
+                                        <button class="sidebar__item-desc-btn">View All</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 g-2">
+                        <!-- Product Layout -->
+                        <div class="product">
+                            <div class="product__pagination">
+                                <span>Showing</span>
+                                <span>1 - 12</span>
+                            </div>
+
+                            <div
+                                class="row row-cols-4 row-cols-xl-4 row-cols-lg-4 row-cols-md-3 row-cols-sm-1 row-cols-xs-1 g-2">
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-1.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item active">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-2.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn active">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-3.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-4.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-5.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-6.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-7.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-8.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-9.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-10.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-11.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-12.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-13.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-14.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-15.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-16.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-17.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-18.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-19.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="product__item">
+                                        <img src="./assets/images/home/img-heart.png" alt="heart"
+                                            class="product__item-heart">
+                                        <div class="product__item-img">
+                                            <a href="">
+                                                <img src="./assets/images/home/img-product-20.png" alt="product" />
+                                            </a>
+                                        </div>
+
+                                        <p class="product__item-name">Target Gift Card 50$ (US)- Order</p>
+                                        <div class="product__item-price">
+                                            <span>120.000</span>
+                                            <span>~</span>
+                                            <span>134.000</span>
+                                        </div>
+
+                                        <button class="product__item-btn">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__item-btn-wrapper">
+                                <button class="product__item-btn-view">
+                                    Xem tất cả
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Footer -->
+                    <footer class="footer">
+    <div class="container">
+        <div class="row g-3">
+            <div class="col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                <div class="footer__list">
+                    <h2 class="footer__list-heading">About Us</h2>
+
+                    <ul class="footer__list-item">
+                        <li>
+                            <a href="">About us</a>
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li>
+                            <a href="">Support</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                <div class="footer__list">
+                    <h2 class="footer__list-heading">Service</h2>
+
+                    <ul class="footer__list-item">
+                        <li>
+                            <a href="">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">How to buy</a>
+                        </li>
+                        <li>
+                            <a href="">Terms of use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                <div class="footer__list">
+                    <h2 class="footer__list-heading">Payment</h2>
+
+                    <div class="footer__list-payment">
+                        <a href="">
+                            <img src="./assets/images/home/img-payment-1.png" alt="img-payment">
+                        </a>
+
+                        <a href="">
+                            <img src="./assets/images/home/img-payment-2.png" alt="img-payment">
+                        </a>
+
+                        <a href="">
+                            <img src="./assets/images/home/img-payment-3.png" alt="img-payment">
+                        </a>
+
+                        <a href="">
+                            <img src="./assets/images/home/img-payment-4.png" alt="img-payment">
+                        </a>
+
+                        <a href="">
+                            <img src="./assets/images/home/img-payment-5.png" alt="img-payment">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                <div class="footer__list">
+                    <h2 class="footer__list-heading">Follow Us</h2>
+
+                    <ul class="footer__list-item">
+                        <li class="footer__list-item-follow">
+                            <img src="./assets/images/home/img-follow-us-1.png" alt="img-follow-us">
+                            <a href="">Facebook</a>
+                        </li>
+                        <li class="footer__list-item-follow">
+                            <img src="./assets/images/home/img-follow-us-2.png" alt="img-follow-us">
+                            <a href="">LinkedIn</a>
+                        </li>
+                        <li class="footer__list-item-follow">
+                            <img src="./assets/images/home/img-follow-us-3.png" alt="img-follow-us">
+                            <a href="">Instagram</a>
+                        </li>
+                        <li class="footer__list-item-follow">
+                            <img src="./assets/images/home/img-follow-us-4.png" alt="img-follow-us">
+                            <a href="">Zalo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="footer__list">
+                    <h2 class="footer__list-heading">Company</h2>
+
+                    <p class="footer__list-hotline">Hotline: 0982636800 (Các ngày trong tuần từ 8h đến 24h)</p>
+                    <p class="footer__list-email">Email:hoantn@fullstack.com.vn</p>
+                </div>
+            </div>
+            <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="footer__list">
+                    <h2 class="footer__list-heading">Certification</h2>
+
+                    <div class="footer__list-certification">
+                        <a href="">
+                            <img src="./assets/images/home/img-certification-1.png" alt="img-payment">
+                        </a>
+
+                        <a href="">
+                            <img src="./assets/images/home/img-certification-2.png" alt="img-payment">
+                        </a>
+
+                        <a href="">
+                            <img src="./assets/images/home/img-certification-3.png" alt="img-payment">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+                </div>
+
+</body>
+
+</html>
